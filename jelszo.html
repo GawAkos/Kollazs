@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+</head>
+<body>
+    <fieldset style="width: 50%;">
+        <legend>Bejelentkezés</legend>
+        <input type="text"  name="felhasználónév" id="user" placeholder="Ird be a neved...">
+        <br>
+        <input type="password" name="jelszo" id="password" placeholder="Jelszavad?" required>
+        <br>
+        <button onclick="belep (user.value,password.value)"> </button>
+    </fieldset>
+    <p id="felh">felhasználónév</p>
+    <p id="jel">jelszo</p>
+    <p id="bel">Belépés?</p>
+
+    <script>
+        function belep(username,password){
+            document.getElementById("felh").innerHTML = username
+            document.getElementById("jel").innerHTML = password
+            if (password == "asdasd" )
+        {
+            document.getElementById("bel").innerHTML = "SIKERES"
+            window.open('https://pepe1125.github.io/kollazs')
+        }
+        else
+        {
+            document.getElementById("bel").innerHTML = "HIBA"
+        }
+        }
+    </script>
+    
+</body>
+</html>
