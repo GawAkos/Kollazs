@@ -127,7 +127,7 @@ td {
 }
 
 #piros {
-    background-color: (0, 100%, 72%);
+    background-color: hsl(0, 100%, 72%)
 }
 
 #halvany {
